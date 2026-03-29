@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;700&family=Atkinson+Hyperlegible:wght@400;700&family=Inconsolata:wght@400;600&display=swap');
+
+:root {
+  --bg-deep: #12100e;
+  --bg-surface: #1a1714;
+  --bg-raised: #231f1b;
+  --linen: #d4c5a9;
+  --copper: #c47a3a;
+  --copper-bright: #e8a85c;
+  --teal: #4a8b7f;
+  --teal-dim: #2d5a52;
+  --cream: #f0ece2;
+  --cream-dim: #a09880;
+  --danger: #c44536;
+  --font-display: 'Eczar', serif;
+  --font-body: 'Atkinson Hyperlegible', sans-serif;
+  --font-mono: 'Inconsolata', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg-deep);
+  color: var(--cream);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--copper);
+  color: var(--bg-deep);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-surface); }
+::-webkit-scrollbar-thumb { background: var(--cream-dim); border-radius: 3px; }
