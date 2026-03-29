@@ -108,9 +108,6 @@ export function ClothCanvas() {
         return
       }
 
-      const w = container.clientWidth
-      const h = container.clientHeight
-
       if (!paused) {
         const windX = windEnabled ? Math.sin(Date.now() * 0.001) * windStrength : 0
         const windY = windEnabled ? Math.cos(Date.now() * 0.0007) * windStrength * 0.3 : 0
